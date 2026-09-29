@@ -1,0 +1,32 @@
+<!-- Indique que le document utilise HTML5. -->
+<!doctype html>
+<!-- Définit le français comme langue principale de la page. -->
+<html lang="fr">
+<!-- Commence les informations invisibles de la page. -->
+<head>
+  <!-- Utilise les caractères accentués correctement. -->
+  <meta charset="UTF-8">
+  <!-- Rend la page responsive sur téléphone. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Empêche cette page personnelle du panier d'être indexée. -->
+  <meta name="robots" content="noindex">
+  <!-- Donne un titre clair à l'onglet. -->
+  <title>Votre panier | KING OFF 6J BUSINESS</title>
+  <!-- Charge l'icône de l'onglet. -->
+  <link rel="icon" href="./public/images/ui/favicon.svg" type="image/svg+xml">
+  <!-- Charge le CSS généré par Tailwind. -->
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+<!-- Indique à main.js que cette page est le panier. -->
+<body data-page="cart">
+  <!-- Zone remplie par le composant de navigation. -->
+  <div id="site-header"></div>
+  <!-- Le contenu du panier sera ajouté par panier.js. -->
+  <main id="cart-page"></main>
+  <!-- Zone remplie par le footer commun. -->
+  <div id="site-footer"></div>
+  <!-- Charge le JavaScript du site. -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+<!-- Ferme le document HTML. -->
+</html>

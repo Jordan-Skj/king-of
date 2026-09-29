@@ -1,0 +1,8 @@
+# Les dépendances sont téléchargées par npm, elles ne vont pas dans Git.
+node_modules/
+
+# Le dossier dist est recréé automatiquement avec npm run build.
+dist/
+
+# Le CSS final est généré automatiquement depuis src/input.css.
+src/output.css

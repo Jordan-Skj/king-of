@@ -1,0 +1,76 @@
+/* Charge Tailwind CSS version 4. */
+@import "tailwindcss";
+
+/* Indique à Tailwind où il doit chercher les classes utilisées par le projet. */
+@source "../*.html";
+@source "./**/*.js";
+
+/* Crée des noms de couleurs réutilisables dans les classes Tailwind. */
+@theme {
+  --color-ink: #07162f;
+  --color-ink-soft: #0d2145;
+  --color-electric: #1e6fff;
+  --color-electric-light: #74a6ff;
+  --color-snow: #f7f9fd;
+}
+
+/* Applique quelques règles communes à tout le site. */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-w-0 overflow-x-hidden bg-snow font-sans text-slate-800 antialiased;
+  }
+
+  button,
+  a,
+  input,
+  select {
+    @apply focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-electric;
+  }
+}
+
+/* Regroupe les classes qui reviennent plusieurs fois dans les pages. */
+@layer components {
+  .page-wrap {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+
+  .section-kicker {
+    @apply text-xs font-extrabold uppercase tracking-[0.2em] text-electric;
+  }
+
+  .page-title {
+    @apply mt-3 text-3xl font-black tracking-tight text-ink sm:text-4xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-2xl bg-electric px-5 py-3 text-sm font-extrabold text-white shadow-[0_14px_28px_rgba(30,111,255,0.22)] transition hover:-translate-y-0.5 hover:bg-blue-700;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-extrabold text-ink transition hover:-translate-y-0.5 hover:border-electric-light hover:text-electric;
+  }
+
+  .card-surface {
+    @apply rounded-3xl border border-slate-200 bg-white shadow-[0_16px_45px_rgba(7,22,47,0.06)];
+  }
+
+  .form-label {
+    @apply mb-2 block text-sm font-bold text-ink;
+  }
+
+  .input-field {
+    @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-ink outline-none transition placeholder:text-slate-400 focus:border-electric focus:ring-4 focus:ring-blue-100;
+  }
+
+  .tag {
+    @apply inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-extrabold text-blue-700;
+  }
+
+  .product-image {
+    @apply h-52 w-full object-contain p-5 transition duration-500 group-hover:scale-105;
+  }
+}

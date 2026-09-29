@@ -1,0 +1,56 @@
+<!-- Indique que le document utilise HTML5. -->
+<!doctype html>
+<!-- Définit le français comme langue principale de la page. -->
+<html lang="fr">
+<!-- Commence les informations invisibles de la page. -->
+<head>
+  <!-- Utilise les caractères accentués correctement. -->
+  <meta charset="UTF-8">
+  <!-- Rend la page responsive sur téléphone. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Empêche cette page de confirmation d'être indexée. -->
+  <meta name="robots" content="noindex">
+  <!-- Donne un titre clair à l'onglet. -->
+  <title>Demande envoyée | KING OFF 6J BUSINESS</title>
+  <!-- Charge l'icône de l'onglet. -->
+  <link rel="icon" href="./public/images/ui/favicon.svg" type="image/svg+xml">
+  <!-- Charge le CSS généré par Tailwind. -->
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+<!-- Indique à main.js que cette page confirme une demande. -->
+<body data-page="confirmation">
+  <!-- Zone remplie par le composant de navigation. -->
+  <div id="site-header"></div>
+  <!-- Commence le contenu unique de la page. -->
+  <main>
+    <!-- Affiche le message de confirmation. -->
+    <section class="page-wrap py-16 sm:py-24">
+      <!-- Centre la carte sans dépasser une largeur confortable. -->
+      <div class="card-surface mx-auto max-w-2xl p-7 text-center sm:p-12">
+        <!-- Cercle avec une coche visuelle. -->
+        <div class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-blue-100 text-3xl font-black text-electric" aria-hidden="true">✓</div>
+        <!-- Petit repère au-dessus du titre. -->
+        <p class="section-kicker mt-7">Demande préparée</p>
+        <!-- Titre principal. -->
+        <h1 class="page-title">Votre message WhatsApp est prêt.</h1>
+        <!-- Explication du comportement attendu. -->
+        <p class="mt-4 leading-7 text-slate-600">Merci <strong id="confirmation-name" class="text-ink">pour votre demande</strong>. WhatsApp s'est ouvert avec votre sélection. Envoyez le message pour que nous confirmions les détails.</p>
+        <!-- Récapitulatif rapide du montant. -->
+        <p class="mt-5 text-sm text-slate-500">Total estimé : <strong id="confirmation-total" class="text-ink">—</strong></p>
+        <!-- Groupe de navigation finale. -->
+        <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+          <!-- Retour vers le catalogue. -->
+          <a href="catalogue.html" class="btn-primary">Continuer le catalogue</a>
+          <!-- Retour vers le contact. -->
+          <a href="contact.html" class="btn-secondary">Voir le contact</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Zone remplie par le footer commun. -->
+  <div id="site-footer"></div>
+  <!-- Charge le JavaScript du site. -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+<!-- Ferme le document HTML. -->
+</html>

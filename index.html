@@ -1,0 +1,147 @@
+<!-- Indique que le document utilise HTML5. -->
+<!doctype html>
+<!-- Définit le français comme langue principale de la page. -->
+<html lang="fr">
+<!-- Commence les informations invisibles de la page. -->
+<head>
+  <!-- Utilise les caractères accentués correctement. -->
+  <meta charset="UTF-8">
+  <!-- Rend le site responsive sur téléphone. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Aide Google à comprendre le sujet de la page. -->
+  <meta name="description" content="KING OFF 6J BUSINESS : catalogue d'iPhone neufs, prix en dollars et commande directe sur WhatsApp à Kinshasa.">
+  <!-- Définit le titre affiché dans l'onglet du navigateur. -->
+  <title>iPhone neufs | KING OFF 6J BUSINESS</title>
+  <!-- Charge la petite icône de l'onglet. -->
+  <link rel="icon" href="./public/images/ui/favicon.svg" type="image/svg+xml">
+  <!-- Charge le CSS généré par Tailwind. -->
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+<!-- data-page permet à main.js de savoir quel script de page lancer. -->
+<body data-page="home">
+  <!-- Cet emplacement sera rempli par src/components/header.js. -->
+  <div id="site-header"></div>
+
+  <!-- Commence le contenu unique de la page d'accueil. -->
+  <main>
+    <!-- Hero : première section que voit le visiteur. -->
+    <section class="overflow-hidden bg-ink py-14 text-white sm:py-20">
+      <!-- Limite la largeur du contenu et garde des marges sur mobile. -->
+      <div class="page-wrap grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <!-- Colonne texte du hero. -->
+        <div>
+          <!-- Petit repère au-dessus du titre. -->
+          <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-light">KING OFF 6J BUSINESS</p>
+          <!-- Titre principal clair et direct. -->
+          <h1 class="mt-4 max-w-2xl text-4xl font-black tracking-tight sm:text-6xl">Votre prochain iPhone commence ici.</h1>
+          <!-- Texte qui explique simplement l'offre. -->
+          <p class="mt-5 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">Des iPhone neufs, des prix clairs en dollars et une commande simple sur WhatsApp. Retrait ou livraison à convenir.</p>
+          <!-- Groupe des deux actions principales. -->
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <!-- Lien vers la page catalogue. -->
+            <a href="catalogue.html" class="btn-primary">Voir tous les iPhone <span aria-hidden="true">→</span></a>
+            <!-- Lien direct vers WhatsApp. -->
+            <a href="https://wa.me/243982993661" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-2xl border border-white/20 px-5 py-3 text-sm font-extrabold text-white transition hover:border-electric-light hover:bg-white/5">Commander sur WhatsApp</a>
+          </div>
+          <!-- Petite information de confiance, sans surcharger le hero. -->
+          <p class="mt-7 text-sm text-slate-400">Disponibilité, couleurs et accessoires confirmés directement dans WhatsApp.</p>
+        </div>
+
+        <!-- Carte visuelle à droite du hero. -->
+        <div class="relative rounded-[2rem] border border-white/10 bg-gradient-to-br from-blue-500/25 to-white/5 p-5 shadow-2xl">
+          <!-- Image produit officielle Apple. -->
+          <img src="https://www.apple.com/newsroom/images/2025/09/apple-debuts-iphone-17/article/Apple-iPhone-17-hero-250909_inline.jpg.large.jpg" alt="Aperçu officiel Apple de la gamme iPhone" class="h-72 w-full rounded-3xl object-cover sm:h-96" loading="eager">
+          <!-- Bandeau qui présente l'information principale. -->
+          <div class="absolute bottom-9 left-9 right-9 rounded-2xl border border-white/10 bg-ink/80 p-4 backdrop-blur">
+            <!-- Ligne d'introduction. -->
+            <p class="text-xs font-extrabold uppercase tracking-[0.16em] text-electric-light">Sélection iPhone</p>
+            <!-- Texte du bandeau. -->
+            <p class="mt-1 text-lg font-black">iPhone 12 à iPhone 17</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section de recherche rapide. -->
+    <section class="page-wrap -mt-7 relative z-10">
+      <!-- Formulaire qui redirige ensuite vers le catalogue. -->
+      <form id="hero-search-form" class="card-surface grid gap-3 p-4 sm:grid-cols-[1fr_auto] sm:p-5">
+        <!-- Champ pour rechercher un modèle. -->
+        <input id="hero-search-input" type="search" class="input-field" placeholder="Rechercher un modèle : iPhone 15 Pro, 256 Go…" aria-label="Rechercher un iPhone">
+        <!-- Bouton qui lance la recherche. -->
+        <button type="submit" class="btn-primary">Rechercher</button>
+      </form>
+    </section>
+
+    <!-- Section de la sélection mise en avant. -->
+    <section class="page-wrap py-16 sm:py-20">
+      <!-- En-tête de la section. -->
+      <div class="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+        <!-- Titre et explication courte. -->
+        <div>
+          <p class="section-kicker">Sélection du moment</p>
+          <h2 class="page-title">Choisissez votre iPhone.</h2>
+          <p class="mt-3 max-w-2xl leading-7 text-slate-600">Chaque fiche montre l'essentiel : modèle, capacité et prix. Les autres détails sont discutés avec vous sur WhatsApp.</p>
+        </div>
+        <!-- Lien vers tous les modèles. -->
+        <a href="catalogue.html" class="text-sm font-extrabold text-electric hover:underline">Voir le catalogue complet →</a>
+      </div>
+      <!-- Cette grille sera remplie par home.js. -->
+      <div id="featured-products" class="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></div>
+    </section>
+
+    <!-- Section qui montre le parcours de commande. -->
+    <section class="bg-blue-50 py-16 sm:py-20">
+      <!-- Conteneur central de la section. -->
+      <div class="page-wrap">
+        <!-- Petit titre explicatif. -->
+        <p class="section-kicker">Simple et direct</p>
+        <!-- Titre de la procédure. -->
+        <h2 class="page-title">Votre commande en trois étapes.</h2>
+        <!-- Trois cartes courtes et lisibles. -->
+        <div class="mt-9 grid gap-5 md:grid-cols-3">
+          <!-- Première étape. -->
+          <article class="rounded-3xl bg-white p-6 shadow-sm">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-ink text-sm font-black text-white">1</span>
+            <h3 class="mt-5 text-lg font-black text-ink">Choisissez</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Parcourez les modèles et ajoutez la capacité qui vous convient au panier.</p>
+          </article>
+          <!-- Deuxième étape. -->
+          <article class="rounded-3xl bg-white p-6 shadow-sm">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-ink text-sm font-black text-white">2</span>
+            <h3 class="mt-5 text-lg font-black text-ink">Préparez</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Saisissez vos coordonnées pour créer un message WhatsApp clair et complet.</p>
+          </article>
+          <!-- Troisième étape. -->
+          <article class="rounded-3xl bg-white p-6 shadow-sm">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-ink text-sm font-black text-white">3</span>
+            <h3 class="mt-5 text-lg font-black text-ink">Confirmez</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Nous validons ensemble la disponibilité, le retrait ou la livraison sur WhatsApp.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appel à l'action final avant le footer. -->
+    <section class="page-wrap py-16 sm:py-20">
+      <!-- Carte sombre contenant le dernier bouton. -->
+      <div class="rounded-[2rem] bg-ink px-6 py-10 text-center text-white sm:px-12 sm:py-14">
+        <!-- Petite étiquette de la carte. -->
+        <p class="text-xs font-extrabold uppercase tracking-[0.2em] text-electric-light">Besoin d'aide ?</p>
+        <!-- Titre de la carte. -->
+        <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Dites-nous l'iPhone que vous cherchez.</h2>
+        <!-- Explication de l'action. -->
+        <p class="mx-auto mt-4 max-w-2xl leading-7 text-slate-300">Même si un modèle n'apparaît pas dans le catalogue, écrivez-nous. Nous vous répondrons directement sur WhatsApp.</p>
+        <!-- Bouton WhatsApp. -->
+        <a href="https://wa.me/243982993661" target="_blank" rel="noopener noreferrer" class="btn-primary mt-7">Écrire sur WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cet emplacement sera rempli par src/components/footer.js. -->
+  <div id="site-footer"></div>
+  <!-- Charge tout le JavaScript du site en mode module. -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+<!-- Ferme le document HTML. -->
+</html>

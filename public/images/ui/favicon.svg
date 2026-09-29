@@ -1,0 +1,6 @@
+<!-- Petit favicon SVG : il est net même à très petite taille. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="K6">
+  <rect width="64" height="64" rx="16" fill="#07162F"/>
+  <path d="M18 13v38M18 32l22-19M18 32l22 19" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+  <path d="M46 18c-7 0-11 5-11 14s4 14 11 14c6 0 10-4 10-10 0-5-3-8-8-8-4 0-7 2-9 5" fill="none" stroke="#1E6FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+</svg>
