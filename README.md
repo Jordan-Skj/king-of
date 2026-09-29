@@ -37,3 +37,4 @@ Toujours dans `src/data/iphones.js`, change la valeur `whatsappNumber` si néces
 
 > Les photos dans les données utilisent des visuels Apple à distance. Pour une boutique réelle, ajoute progressivement tes propres photos des produits réellement disponibles dans `public/images/phones/`.
 # king-of
+# king-of
