@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">KING OFF 6J BUSINESS — iPhone neufs à Kinshasa</title>
+  <desc id="desc">Image de partage pour la boutique KING OFF 6J BUSINESS.</desc>
+  <rect width="1200" height="630" fill="#0A1D37"/>
+  <rect x="58" y="58" width="1084" height="514" fill="none" stroke="#24446F" stroke-width="2"/>
+  <rect x="94" y="94" width="66" height="66" rx="12" fill="#075FC9"/>
+  <path d="M112 112v31M112 128l18-16M112 128l19 16" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="square"/>
+  <path d="M145 113c-9 0-15 7-15 19 0 14 6 20 16 20 7 0 12-4 12-11 0-6-5-10-10-10-4 0-7 2-9 5 0-10 3-15 9-15 3 0 5 1 7 3l5-6c-4-4-9-6-15-6Z" fill="#A9C9FF"/>
+  <text x="184" y="137" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="1">KING OFF 6J BUSINESS</text>
+  <text x="94" y="258" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700">iPhone neufs à Kinshasa.</text>
+  <text x="94" y="322" fill="#A9C9FF" font-family="Arial, Helvetica, sans-serif" font-size="30">Modèles, capacités et prix affichés en dollars.</text>
+  <text x="94" y="374" fill="#D8E6FF" font-family="Arial, Helvetica, sans-serif" font-size="24">Disponibilité confirmée sur WhatsApp avant toute vente.</text>
+  <rect x="94" y="438" width="333" height="60" rx="8" fill="#075FC9"/>
+  <text x="260" y="476" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Commander sur WhatsApp</text>
+  <g transform="translate(804 108)">
+    <rect x="55" y="0" width="240" height="414" rx="36" fill="#A9C9FF"/>
+    <rect x="65" y="10" width="220" height="394" rx="26" fill="#FFFFFF"/>
+    <rect x="88" y="72" width="174" height="260" rx="14" fill="#EAF1FC"/>
+    <rect x="116" y="26" width="118" height="10" rx="5" fill="#0A1D37"/>
+    <rect x="90" y="74" width="170" height="64" fill="#075FC9"/>
+    <circle cx="123" cy="106" r="16" fill="#FFFFFF"/>
+    <circle cx="163" cy="106" r="16" fill="#FFFFFF"/>
+    <circle cx="143" cy="129" r="7" fill="#FFFFFF"/>
+    <text x="175" y="238" fill="#0A1D37" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" text-anchor="middle">iPhone</text>
+    <circle cx="175" cy="365" r="8" fill="#0A1D37"/>
+  </g>
+</svg>

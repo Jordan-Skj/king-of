@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 620" role="img" aria-labelledby="title">
+  <title id="title">Illustration indicative d'un iPhone 17</title>
+  <rect x="118" y="42" width="284" height="496" rx="42" fill="#0A1D37"/>
+  <rect x="130" y="54" width="260" height="472" rx="32" fill="#EAF1FC"/>
+  <rect x="148" y="96" width="224" height="380" rx="20" fill="#FFFFFF"/>
+  <rect x="208" y="68" width="104" height="12" rx="6" fill="#0A1D37"/>
+  <rect x="152" y="100" width="216" height="76" fill="#075FC9"/>
+  <circle cx="188" cy="132" r="18" fill="#FFFFFF" opacity=".95"/>
+  <circle cx="236" cy="132" r="18" fill="#FFFFFF" opacity=".95"/>
+  <circle cx="212" cy="158" r="18" fill="#FFFFFF" opacity=".95"/>
+  <text x="260" y="322" fill="#0A1D37" font-family="Arial, sans-serif" font-size="40" font-weight="700" text-anchor="middle">iPhone 17</text>
+  <text x="260" y="360" fill="#075FC9" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Illustration indicative</text>
+  <circle cx="260" cy="500" r="10" fill="#0A1D37"/>
+</svg>

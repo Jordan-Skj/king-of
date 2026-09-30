@@ -1,40 +1,53 @@
 # KING OFF 6J BUSINESS — Boutique iPhone
 
-Petit projet pédagogique de boutique iPhone créé avec **HTML**, **Tailwind CSS** et **JavaScript vanilla**.
+Boutique frontend d’iPhone neufs construite avec HTML, Tailwind CSS v4 et JavaScript vanilla. Les demandes sont préparées dans le navigateur puis ouvertes dans WhatsApp ; aucun paiement ni aucune base de données client ne sont intégrés dans cette version.
 
-## Ce que fait cette version
+## Ce qui est inclus
 
-- affiche les iPhone neufs et leurs prix en dollars ;
-- permet de rechercher, filtrer et trier le catalogue ;
-- garde le panier dans `localStorage` ;
-- construit un message de commande détaillé pour WhatsApp ;
-- ne réalise aucun paiement automatique.
+- catalogue filtrable, panier local et demande WhatsApp ;
+- interface responsive, sans dégradés, sans faux avis et sans statistiques inventées ;
+- illustrations originales locales légères, à remplacer par les photos autorisées des produits réellement disponibles ;
+- pages de confidentialité, cookies, mentions légales et conditions générales ;
+- bannière de consentement et chargement facultatif de Cloudflare Web Analytics ;
+- route Cloudflare Pages Functions pour vérifier Cloudflare Turnstile sans exposer sa clé secrète ;
+- `robots.txt`, `sitemap.xml`, favicon, image de partage et page `404.html` ;
+- en-têtes de sécurité Cloudflare dans `public/_headers`.
 
-## Lancer le projet
+## Démarrer en local
 
 ```bash
 npm install
 npm run dev
 ```
 
-Ensuite, ouvre l'adresse affichée par Vite, généralement `http://localhost:5173/`.
+Vite affichera l’adresse locale à ouvrir dans ton navigateur.
 
-## Construire la version à publier
+## Préparer la version à publier
 
 ```bash
 npm run build
 ```
 
-Le dossier `dist/` sera créé. C'est ce dossier qu'il faut envoyer sur GitHub Pages, Netlify ou un autre hébergeur statique.
+Le dossier `dist/` est celui à déployer dans Cloudflare Pages. La configuration Vite génère toutes les pages HTML, pas uniquement l’accueil.
 
-## Où modifier les produits ?
+## Modifier la boutique
 
-Ouvre `src/data/iphones.js` : chaque objet représente un iPhone ou une capacité. Tu peux y changer le prix, ajouter un modèle ou remplacer une image.
+Le fichier central est `src/data/iphones.js` :
 
-## Où modifier le numéro WhatsApp ?
+- prix, modèles et capacités ;
+- numéro WhatsApp ;
+- URL publique du site ;
+- clé publique Turnstile ;
+- jeton public Cloudflare Web Analytics.
 
-Toujours dans `src/data/iphones.js`, change la valeur `whatsappNumber` si nécessaire.
+Ne place jamais une clé secrète dans ce fichier, dans un HTML ou dans Git. La clé secrète Turnstile va uniquement dans la variable Cloudflare `TURNSTILE_SECRET_KEY`.
 
-> Les photos dans les données utilisent des visuels Apple à distance. Pour une boutique réelle, ajoute progressivement tes propres photos des produits réellement disponibles dans `public/images/phones/`.
-# king-of
-# king-of
+## Avant la publication
+
+Lis et termine les fichiers suivants :
+
+- `CLOUDFLARE-DEPLOY.md` pour déployer sans nom de domaine personnalisé ;
+- `LEGAL-CHECKLIST.md` pour les informations légales qui ne doivent pas être inventées ;
+- `GUIDE-DE-LECTURE.md` pour comprendre le code petit à petit.
+
+> Les pages légales fournies sont une base de travail technique. Elles ne remplacent pas une validation par le responsable de l’activité ou un conseil juridique compétent en RDC.

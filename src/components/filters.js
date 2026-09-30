@@ -32,7 +32,7 @@ export function filtersMarkup() {
       <label class="block">
         <span class="form-label">Trier</span>
         <select id="sort-filter" class="input-field">
-          <option value="default">Recommandés</option>
+          <option value="default">Ordre du catalogue</option>
           <option value="low">Prix croissant</option>
           <option value="high">Prix décroissant</option>
         </select>

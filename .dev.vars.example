@@ -1,0 +1,2 @@
+# Ne publiez jamais une vraie clé secrète dans Git ou dans le navigateur.
+TURNSTILE_SECRET_KEY=remplacez_par_votre_cle_secrete_turnstile

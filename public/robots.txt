@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /panier.html
+Disallow: /commande.html
+Disallow: /confirmation.html
+Disallow: /produit.html
+Disallow: /panier
+Disallow: /commande
+Disallow: /confirmation
+Disallow: /produit
+
+Sitemap: https://king-off-6j-business.pages.dev/sitemap.xml

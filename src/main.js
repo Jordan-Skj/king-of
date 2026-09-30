@@ -12,6 +12,7 @@ import { initProduitPage } from "./pages/produit.js";
 import { initPanierPage } from "./pages/panier.js";
 import { initCommandePage } from "./pages/commande.js";
 import { initConfirmationPage } from "./pages/confirmation.js";
+import { initCookieConsent } from "./services/consent.js";
 
 // Met à jour le petit chiffre bleu dans le bouton Panier.
 function syncCartBadge() {
@@ -26,7 +27,8 @@ function showToast(message) {
 
   const toast = document.createElement("div");
   toast.id = "site-toast";
-  toast.className = "fixed bottom-5 left-1/2 z-50 -translate-x-1/2 rounded-2xl bg-ink px-5 py-3 text-sm font-bold text-white shadow-2xl";
+  toast.className = "fixed bottom-5 left-1/2 z-50 -translate-x-1/2 rounded-lg bg-ink px-5 py-3 text-sm font-bold text-white shadow-lg";
+  toast.setAttribute("role", "status");
   toast.textContent = message;
   document.body.appendChild(toast);
 
@@ -63,3 +65,4 @@ renderFooter();
 syncCartBadge();
 bindGlobalCartButtons();
 initCurrentPage();
+initCookieConsent();

@@ -20,7 +20,12 @@ export default defineConfig({
         panier: resolve(import.meta.dirname, "panier.html"),
         commande: resolve(import.meta.dirname, "commande.html"),
         confirmation: resolve(import.meta.dirname, "confirmation.html"),
-        contact: resolve(import.meta.dirname, "contact.html")
+        contact: resolve(import.meta.dirname, "contact.html"),
+        mentionsLegales: resolve(import.meta.dirname, "mentions-legales.html"),
+        confidentialite: resolve(import.meta.dirname, "politique-confidentialite.html"),
+        conditionsGenerales: resolve(import.meta.dirname, "conditions-generales.html"),
+        cookies: resolve(import.meta.dirname, "cookies.html"),
+        notFound: resolve(import.meta.dirname, "404.html")
       }
     }
   }
